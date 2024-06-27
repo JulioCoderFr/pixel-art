@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Pixel Pro!</title>
+    <style>
+        #canvas {
+            border: 1px solid #f2f2f2;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/LOGO_PIXEL_ART.png">
+        
+    </header>
+    <main>
+        <div class="steps">
+            <div class="select">
+                <h2>INGRESAR IMAGEN</h2>
+                <input type="file" id="fileInput" />
+            </div>
+            <div class="colors">
+                <h2>INGRESAR LA PALETA DE COLORES</h2>
+                <div class="color-picker">
+                    <div class="colorInputWrapper">
+                        <label for="colorInput1">Color 1:</label>
+                        <input type="text" id="colorInput1" placeholder="R=255 G=255 B=255"><br>
+                    </div>
+
+                    <div class="colorInputWrapper">
+                        <label for="colorInput2">Color 2:</label>
+                        <input type="text" id="colorInput2" placeholder="R=255 G=255 B=255"><br>
+                    </div>
+
+                    <div class="colorInputWrapper">
+                        <label for="colorInput3">Color 3:</label>
+                        <input type="text" id="colorInput3" placeholder="R=255 G=255 B=255"><br>
+                    </div>
+
+                    <div class="colorInputWrapper">
+                        <label for="colorInput4">Color 4:</label>
+                        <input type="text" id="colorInput4" placeholder="R=255 G=255 B=255"><br>
+                    </div>
+                </div>
+                <div class="color-picker">
+                    <div class="colorInputWrapper">
+                        <label for="colorInput5">Color 5:</label>
+                        <input type="text" id="colorInput5" placeholder="R=255 G=255 B=255"><br>
+                    </div>
+
+                    <div class="colorInputWrapper">
+                        <label for="colorInput6">Color 6:</label>
+                        <input type="text" id="colorInput6" placeholder="R=255 G=255 B=255"><br>
+                    </div>
+
+                    <div class="colorInputWrapper">
+                        <label for="colorInput7">Color 7:</label>
+                        <input type="text" id="colorInput7" placeholder="R=255 G=255 B=255"><br>
+                    </div>
+
+                    <div class="colorInputWrapper">
+                        <label for="colorInput8">Color 8:</label>
+                        <input type="text" id="colorInput8" placeholder="R=255 G=255 B=255"><br>
+                    </div>
+                </div>
+                <div class="color-picker">
+                    <div class="colorInputWrapper">
+                        <label for="colorInput9">Color 9:</label>
+                        <input type="text" id="colorInput9" placeholder="R=255 G=255 B=255"><br>
+                    </div>
+
+                    <div class="colorInputWrapper">
+                        <label for="colorInput10">Color 10:</label>
+                        <input type="text" id="colorInput10" placeholder="R=255 G=255 B=255"><br>
+                    </div>
+
+                    <div class="colorInputWrapper">
+                        <label for="colorInput11">Color 11:</label>
+                        <input type="text" id="colorInput11" placeholder="R=255 G=255 B=255"><br>
+                    </div>
+
+                    <div class="colorInputWrapper">
+                        <label for="colorInput12">Color 12:</label>
+                        <input type="text" id="colorInput12" placeholder="R=255 G=255 B=255"><br>
+                    </div>
+                </div>
+                <div class="color-picker">
+                    <div class="colorInputWrapper">
+                        <label for="colorInput13">Color 13:</label>
+                        <input type="text" id="colorInput13" placeholder="R=255 G=255 B=255"><br>
+                    </div>
+
+                    <div class="colorInputWrapper">
+                        <label for="colorInput14">Color 14:</label>
+                        <input type="text" id="colorInput14" placeholder="R=255 G=255 B=255"><br>
+                    </div>
+
+                    <div class="colorInputWrapper">
+                        <label for="colorInput15">Color 15:</label>
+                        <input type="text" id="colorInput15" placeholder="R=255 G=255 B=255"><br>
+                    </div>
+
+                    <div class="colorInputWrapper"><label for="colorInput16">Color 16:</label>
+                        <input type="text" id="colorInput16" placeholder="R=255 G=255 B=255"><br>
+                    </div>
+                </div>
+                <button id="setColorsButton">Establecer Colores</button>
+            </div>
+
+
+
+            <div class="process">
+                <h2>PROCESAR IMAGEN</h2>
+                <div class="centro">
+                    <div class="pixel">
+                        <label for="pixelSize">Tamaño de píxel:</label>
+                        <input type="number" id="pixelSize" name="pixelSize" min="10" value="10">
+                    </div>
+                    <button id="processButton" disabled class="btn">Reducir</button>
+                    <button id="pixelateButton" disabled class="btn">Pixel</button>
+                    <button id="replaceWithNumbersButton" disabled class="btn">Agregar números</button>
+                    <button id="removeBackgroundButton" disabled class="btn">Eliminar Fondo</button>
+                    <button id="downloadButton" disabled class="descargar" class="btn">Descargar Imagen</button>
+                </div>
+                <div class="inferior">
+                    <canvas id="canvas"></canvas>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <footer>
+            <h3>© Julio Armas 2024</h3>
+        </footer>
+
+
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
